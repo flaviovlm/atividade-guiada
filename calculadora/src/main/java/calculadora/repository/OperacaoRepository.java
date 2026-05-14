@@ -1,0 +1,7 @@
+package calculadora.repository;
+
+import calculadora.model.OperacaoModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface OperacaoRepository extends JpaRepository<OperacaoModel, Long> {
+}

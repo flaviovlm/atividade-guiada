@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Minimalista</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <main class="calculator-box">
+            <header>
+                <h1>Minimal Calc.</h1>
+                <button id="theme-toggle" class="theme-btn" title="Alternar Tema"></button>
+            </header>
+
+            <div class="display">
+                <span id="resultado">0</span>
+            </div>
+
+            <div class="keypad">
+                <button class="op-btn active" data-op="Soma">+</button>
+                <button class="op-btn" data-op="Subtração">-</button>
+                <button class="op-btn" data-op="Multiplicação">×</button>
+                <button class="op-btn" data-op="Divisão">÷</button>
+                <button class="op-btn" data-op="Porcentagem">%</button>
+                <button class="op-btn" data-op="Raiz quadrada">√</button>
+                <button class="op-btn" data-op="Potenciação">x²</button>
+            </div>
+
+            <div class="inputs">
+                <input type="number" id="number1" placeholder="Nº 1" required>
+                <input type="number" id="number2" placeholder="Nº 2">
+            </div>
+
+            <button id="btn-calcular" class="calc-btn">Calcular</button>
+        </main>
+
+        <aside class="history-box">
+            <h2>Histórico</h2>
+            <ul id="history-list"></ul>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
